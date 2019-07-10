@@ -1,0 +1,13 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 300px;
+  border-radius: 0px 0px 40px 40px;
+}
+
+.main__title {
+  color: white;
+  font-size: 25px;
+}
