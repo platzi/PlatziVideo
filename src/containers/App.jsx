@@ -16,15 +16,15 @@ const App = () => {
     <div className="App">
       <Header />
       <Search />
-
       {initialState.mylist.length > 0 &&
         <Categories title="Mi Lista">
           <Carousel>
-            <CarouselItem />
+            {initialState.mylist.map(item =>
+              <CarouselItem key={item.id} {...item} />
+            )}
           </Carousel>
         </Categories>
       }
-
       <Categories title="Tendencias">
         <Carousel>
           {initialState.trends.map(item =>
@@ -32,13 +32,13 @@ const App = () => {
           )}
         </Carousel>
       </Categories>
-
       <Categories title="Originales de Platzi Video">
         <Carousel>
-          <CarouselItem />
+          {initialState.originals.map(item =>
+            <CarouselItem key={item.id} {...item} />
+          )}
         </Carousel>
       </Categories>
-
       <Footer />
     </div>
   );
