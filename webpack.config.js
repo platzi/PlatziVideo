@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const autoprefixer = require('autoprefixer');
+const webpack = require('webpack');
 
 module.exports = {
   entry: './src/frontend/index.js',
@@ -11,6 +12,26 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js', '.jsx'],
+  },
+  optimizations: {
+    splitChunks: {
+      chunks: 'async',
+      name: true,
+      cacheGroups: {
+        vendors: {
+          name: 'vendors',
+          chuck: 'all',
+          reuseExistingChung: true,
+          priority: 1,
+          filename: 'assets/vendor.js',
+          enforce: true,
+          test(module, chunks) {
+            const name = module.nameForCondition && module.nameForCondition();
+            return chunks.some(chuck => chuck.name !== 'vendor' && /[\\/]node_modules[\\/]/.test(name));
+          },
+        },
+      },
+    },
   },
   module: {
     rules: [
@@ -65,7 +86,8 @@ module.exports = {
     historyApiFallback: true,
   },
   plugins: [
-    new HtmlWebPackPlugin.LoaderOptionsPlugin({
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.LoaderOptionsPlugin({
       options: {
         postcss: [
           autoprefixer(),
