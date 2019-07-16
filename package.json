@@ -33,7 +33,9 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-hot-loader": "4.12.7",
-    "react-router-dom": "^5.0.1"
+    "react-router-dom": "^5.0.1",
+    "webpack-dev-middleware": "3.7.0",
+    "webpack-hot-middleware": "2.25.0"
   },
   "devDependencies": {
     "@babel/core": "^7.5.4",
