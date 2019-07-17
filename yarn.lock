@@ -1169,6 +1169,15 @@ assert@^1.1.1:
     object-assign "^4.1.1"
     util "0.10.3"
 
+asset-require-hook@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/asset-require-hook/-/asset-require-hook-1.2.0.tgz#dd4b8f7c187774223ec31e30bd93aa875d174c6e"
+  integrity sha512-MgFMBC6SaYKiE0CqkYd5kZaKyWgxYErnoAmjAhJ8RZt7GKIvx0OvXIsqCqk3fo+wxjeA+tz4/QPS23s3WW/+jA==
+  dependencies:
+    loader-utils "^0.2.12"
+    lodash.assign "^4.0.0"
+    mime "^1.3.4"
+
 assign-symbols@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/assign-symbols/-/assign-symbols-1.0.0.tgz#59667f41fadd4f20ccbc2bb96b8d4f7f78ec0367"
@@ -4086,6 +4095,11 @@ ignore-by-default@^1.0.1:
   resolved "https://registry.yarnpkg.com/ignore-by-default/-/ignore-by-default-1.0.1.tgz#48ca6d72f6c6a3af00a9ad4ae6876be3889e2b09"
   integrity sha1-SMptcvbGo68Aqa1K5odr44ieKwk=
 
+ignore-styles@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/ignore-styles/-/ignore-styles-5.0.1.tgz#b49ef2274bdafcd8a4880a966bfe38d1a0bf4671"
+  integrity sha1-tJ7yJ0va/NikiAqWa/440aC/RnE=
+
 ignore-walk@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/ignore-walk/-/ignore-walk-3.0.1.tgz#a83e62e7d272ac0e3b551aaa82831a19b69f82f8"
@@ -4822,7 +4836,7 @@ loader-utils@1.2.3, loader-utils@^1.0.1, loader-utils@^1.0.2, loader-utils@^1.1.
     emojis-list "^2.0.0"
     json5 "^1.0.1"
 
-loader-utils@^0.2.16:
+loader-utils@^0.2.12, loader-utils@^0.2.16:
   version "0.2.17"
   resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-0.2.17.tgz#f86e6374d43205a6e6c60e9196f17c0299bfb348"
   integrity sha1-+G5jdNQyBabmxg6RlvF8Apm/s0g=
@@ -4892,6 +4906,11 @@ lodash._root@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/lodash._root/-/lodash._root-3.0.1.tgz#fba1c4524c19ee9a5f8136b4609f017cf4ded692"
   integrity sha1-+6HEUkwZ7ppfgTa0YJ8BfPTe1pI=
+
+lodash.assign@^4.0.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/lodash.assign/-/lodash.assign-4.2.0.tgz#0d99f3ccd7a6d261d19bdaeb9245005d285808e7"
+  integrity sha1-DZnzzNem0mHRm9rrkkUAXShYCOc=
 
 lodash.escape@^3.0.0:
   version "3.2.0"
@@ -5142,7 +5161,7 @@ mime-types@^2.1.12, mime-types@~2.1.17, mime-types@~2.1.19, mime-types@~2.1.24:
   dependencies:
     mime-db "1.40.0"
 
-mime@1.6.0:
+mime@1.6.0, mime@^1.3.4:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/mime/-/mime-1.6.0.tgz#32cd9e5c64553bd58d19a568af452acff04981b1"
   integrity sha512-x0Vn8spI+wuJ1O6S7gnbaQg8Pxh4NNHb7KSINmEWKiPE4RKOplvijn+NkmYmmRgP68mc70j2EbeTFRsrswaQeg==
@@ -6450,6 +6469,13 @@ react-redux@^7.1.0:
     loose-envify "^1.4.0"
     prop-types "^15.7.2"
     react-is "^16.8.6"
+
+react-router-config@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/react-router-config/-/react-router-config-5.0.1.tgz#e6663010f42aa5e39c2f21412d8f958f6866e48a"
+  integrity sha512-dgM4+aW08eMWJYnmYWRvaArOrvwdl440W2m3y6IcGUSizXD5BTg/OcJ//z8kTiHnLG+uOwXRiCnKjWQ7IkvNnA==
+  dependencies:
+    "@babel/runtime" "^7.1.2"
 
 react-router-dom@^5.0.1:
   version "5.0.1"
