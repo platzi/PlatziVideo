@@ -28,7 +28,20 @@ if (ENV === 'development') {
 }
 
 app.get('*', (req, res) => {
-  res.send({ holamundo: true });
+  res.send(`
+  <!DOCTYPE html>
+    <html>
+      <head>
+        <title>Platzi Video</title>
+        <link rel="stylesheet" href="assets/app.css" type="text/css"></link>
+      </head>
+      <body>
+        <div id="app"></div>
+        <script src="assets/app.js" type="text/javascript"></script>
+        <script src="assets/vendor.js" type="text/javascript"></script>
+      </body>
+    </html>
+  `);
 });
 
 app.listen(PORT, (err) => {
