@@ -1,6 +1,3 @@
-@import "./Vars.scss";
-@import "./Media.scss";
-
 body {
   margin: 0;
   font-family: $theme-font;
@@ -9,4 +6,8 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+figure {
+  margin: 0;
 }
