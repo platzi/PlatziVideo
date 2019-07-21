@@ -7,6 +7,10 @@
   border-radius: 0px 0px 40px 40px;
 }
 
+.main .isHome {
+  width: 70%;
+}
+
 .main__title {
   color: white;
   font-size: 25px;
@@ -23,7 +27,6 @@
   margin-bottom: 20px;
   outline: none;
   padding: 0px 20px;
-  width: 70%;
 }
 
 ::placeholder {
