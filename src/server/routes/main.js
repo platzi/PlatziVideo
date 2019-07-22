@@ -12,6 +12,7 @@ import render from '../render';
 
 const main = (req, res, next) => {
   try {
+    const isLogged = (initialState.user.id);
     const store = createStore(reducer, initialState);
     const html = renderToString(
       <Provider store={store}>
@@ -20,7 +21,7 @@ const main = (req, res, next) => {
           context={{}}
         >
           <Layout>
-            {renderRoutes(Routes)}
+            {renderRoutes(Routes(isLogged))}
           </Layout>
         </StaticRouter>
       </Provider>,
