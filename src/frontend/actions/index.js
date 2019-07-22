@@ -45,3 +45,26 @@ export const registerUser = (payload, redirecUrl) => {
       .catch(err => dispatch(setError(err)));
   };
 };
+
+export const loginUser = ({ email, password }, redirecUrl) => {
+  return (dispatch) => {
+    axios({
+      url: '/auth/sign-in',
+      method: 'post',
+      auth: {
+        username: email,
+        password,
+      },
+    })
+      .then(({ data }) => {
+        document.cookie = `email=${data.email}`;
+        document.cookie = `name=${data.name}`;
+        document.cookie = `id=${data.id}`;
+        dispatch(loginRequest(data));
+      })
+      .then(() => {
+        window.location.href = redirecUrl;
+      })
+      .catch(err => dispatch(setError(err)));
+  };
+};
