@@ -13,7 +13,11 @@ const Header = (props) => {
   const hasUser = Object.keys(user).length > 0;
 
   const handleLogout = () => {
+    document.cookie = 'email=';
+    document.cookie = 'name=';
+    document.cookie = 'id=';
     props.logoutRequest({});
+    window.location.href = '/login';
   };
   const headerClass = classNames('header', {
     isLogin,
