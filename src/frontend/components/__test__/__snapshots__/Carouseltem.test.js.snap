@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Carousel Item component Match Snapshot 1`] = `
+<div
+  className="carousel-item"
+>
+  <img
+    className="carousel-item__img"
+  />
+  <div
+    className="carousel-item__details"
+  >
+    <div>
+      <a
+        href="/player/undefined"
+        onClick={[Function]}
+      >
+        <img
+          alt="Play Icon"
+          className="carousel-item__details--img"
+          src="test-file-stubs"
+        />
+      </a>
+      <img
+        alt="Plus Icon"
+        className="carousel-item__details--img"
+        onClick={[Function]}
+        src="test-file-stubs"
+      />
+    </div>
+    <p
+      className="carousel-item__details--title"
+    />
+    <p
+      className="carousel-item__details--subtitle"
+    >
+      undefined undefined undefined
+    </p>
+  </div>
+</div>
+`;
