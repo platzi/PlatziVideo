@@ -8,7 +8,8 @@
     "start:prod": "node src/server/index.js",
     "start:dev": "nodemon src/server/index.js --exact babel-node",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "jest": {
     "moduleNameMapper": {
