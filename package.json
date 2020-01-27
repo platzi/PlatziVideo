@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
     "start": "webpack-dev-server --open --mode development",
-    "start:dev": "node src/server/index"
+    "start:dev": "nodemon src/server/index"
   },
   "keywords": [],
   "author": "",
@@ -24,6 +24,7 @@
     "eslint-plugin-react": "^7.18.0",
     "express": "^4.17.1",
     "md5": "^2.2.1",
+    "nodemon": "^2.0.2",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
