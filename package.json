@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production",
-    "start": "webpack-dev-server --open --mode development",
+    "build": "webpack-cli --config webpack.config.js",
     "start:dev": "nodemon src/server/index"
   },
   "keywords": [],
