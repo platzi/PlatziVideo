@@ -76,3 +76,6 @@ yarn-error.log
 dist/
 
 src/server/public
+
+nextjs/node_modules
+.next
