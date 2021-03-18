@@ -1,0 +1,68 @@
+.register {
+  background-image: linear-gradient(#21c08b, #8f57fd);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 30px;
+<<<<<<< HEAD
+  min-height: calc(
+    100vh - 200px
+  ); /* El ancho será igual al tamaño de todo el height menos 200px (100px del header + 100px del footer) */
+}
+
+.register__container {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid white;
+  border-radius: 40px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+=======
+  min-height: calc(100vh - 200px); /* El ancho será igual al tamaño de todo el height menos 200px (100px del header + 100px del footer) */
+}
+
+.register__container {
+  background-color: rgba(255,255,255,0.1);
+  border: 2px solid white;
+  border-radius: 40px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+>>>>>>> a2aa20ba2160ab61138267a58a23cf5f5fb1d2d8
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+<<<<<<< HEAD
+  min-height: 600px;
+  padding: 20px;
+  width: 300px;
+  h2 {
+    text-align: center;
+  }
+=======
+  padding: 60px 68px 40px;
+>>>>>>> a2aa20ba2160ab61138267a58a23cf5f5fb1d2d8
+}
+
+.register__container--form {
+  display: flex;
+  flex-direction: column;
+<<<<<<< HEAD
+  align-items: center;
+  justify-content: center;
+=======
+>>>>>>> a2aa20ba2160ab61138267a58a23cf5f5fb1d2d8
+}
+
+.register__container a {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.register__container a:hover {
+  text-decoration: underline;
+<<<<<<< HEAD
+}
+=======
+}
+>>>>>>> a2aa20ba2160ab61138267a58a23cf5f5fb1d2d8
